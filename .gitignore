@@ -1,0 +1,40 @@
+# Exclude common build output and dependency directories
+
+## Node.js
+# Dependensi
+/node_modules
+
+# Berkas cache dan debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+
+## Berkas Build Tailwind CSS
+# Secara default, Tailwind akan menghasilkan CSS output ke berkas tertentu.
+# Jangan masukkan berkas CSS yang dihasilkan ini ke dalam Git, karena dapat dibuat ulang.
+# Ganti nama berkas output jika Anda menggunakan nama yang berbeda.
+/dist
+/public/css/main.css
+/src/output.css
+
+## IDE / Editor
+# Visual Studio Code
+.vscode
+*.code-workspace
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Other temp files
+*.log
+*.tmp
+*.temp

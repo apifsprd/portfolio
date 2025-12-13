@@ -18,37 +18,53 @@
         --font-sans: "Noto Sans", sans-serif;
       }
       @layer components {
+        .h1 {
+          @apply text-3xl font-bold text-slate-800;
+        }
+        .h2 {
+          @apply text-2xl font-bold text-slate-800;
+        }
+        .h3 {
+          @apply text-xl font-bold text-slate-800;
+        }
+        .h4 {
+          @apply text-lg font-bold text-slate-800;
+        }
+        .h5 {
+          @apply text-base font-bold text-slate-800;
+        }
+        .h6 {
+          @apply text-sm font-normal text-slate-800;
+        }
+        .p {
+          @apply text-sm text-slate-800;
+        }
         .nav-link {
           @apply text-sm font-semibold text-slate-800;
         }
         .social-link {
           @apply flex flex-row gap-2 items-center px-4 py-2 bg-slate-100 rounded-full hover:bg-slate-200 transition duration-400 ease-in-out;
         }
+        .skill-wrapper {
+          @apply flex flex-row gap-2 items-center;
+        }
+        .skill-wrapper-img {
+          @apply w-8 h-8 object-cover;
+        }
       }
     </style>
   </head>
-  <body class="w-screen min-h-screen px-2 py-4">
+  <body class="w-screen min-h-screen">
     <header
-      class="flex flex-row justify-between items-center gap-4 border border-slate-300 p-1 rounded-full"
+      class="flex flex-row justify-between items-center gap-4 border border-slate-300 mx-2 my-4 p-1 rounded-full"
     >
       <h1 class="text-base font-semibold text-slate-800 ml-2">Apif Supriadi</h1>
-      <nav class="flex flex-row justify-between items-center gap-2 hidden">
-        <ul>
-          <li><a href="#" class="nav-link">Pengalaman</a></li>
-        </ul>
-        <ul>
-          <li><a href="#" class="nav-link">Proyek</a></li>
-        </ul>
-        <ul>
-          <li><a href="#" class="nav-link">Kontak</a></li>
-        </ul>
-      </nav>
       <a href="#" class="social-link">
         <i data-lucide="phone" class="w-4 h-4"></i>
         <p class="text-sm text-slate-800">Kontak</p>
       </a>
     </header>
-    <section data-style="main" class="py-4">
+    <section data-style="main" class="py-4 mx-2 my-4">
       <main class="flex flex-col gap-4">
         <div
           class="w-18 h-18 rounded-full overflow-hidden border border-slate-300"
@@ -80,6 +96,107 @@
           >
         </div>
       </main>
+    </section>
+    <section
+      data-style="pengalaman"
+      class="bg-slate-100 py-4 px-2 flex flex-col gap-4"
+    >
+      <h2 class="h2">Kemampuan Teknis</h2>
+      <div class="flex flex-col flex-wrap gap-2">
+        <h6 class="h6">Bahasa Pemrograman</h6>
+        <div class="flex flex-row gap-4">
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/js.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">JavaScript</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/ts.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">TypeScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col flex-wrap gap-2">
+        <h6 class="h6">Framework</h6>
+        <div class="flex flex-row gap-4">
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">React</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">React Native</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">TailwindCSS</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">Express</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">Expo</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col flex-wrap gap-2">
+        <h6 class="h6">Peralatan</h6>
+        <div class="flex flex-row gap-4">
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">Git</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">Figma</p>
+          </div>
+          <div class="skill-wrapper">
+            <img
+              src="images/logos/react.png"
+              alt="javascript-logo"
+              class="skill-wrapper-img"
+            />
+            <p class="p">Playwright</p>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
   <!-- Lucide Icon -->
