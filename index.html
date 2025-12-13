@@ -4,7 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apif Supriadi - Portfolio</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .nav-link {
+          @apply text-sm font-semibold;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="w-screen min-h-screen px-2 py-4">
+    <header
+      class="flex flex-row justify-between items-center gap-4 border border-slate-300 px-2 py-1 rounded-full"
+    >
+      <div class="w-8 h-8 rounded-full overflow-hidden border border-slate-300">
+        <img
+          src="/images/40.jpg"
+          alt="@apifsprd-photo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <nav class="flex flex-row justify-between items-center gap-2 mr-4">
+        <ul>
+          <li><a href="#" class="nav-link">Pengalaman</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="nav-link">Proyek</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  <!-- Lucide Icon -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </html>
 `
