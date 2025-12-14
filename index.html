@@ -46,7 +46,7 @@
           @apply flex flex-row gap-1 sm:gap-2 items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-slate-100 rounded-full hover:bg-slate-200 transition duration-400 ease-in-out text-xs sm:text-sm;
         }
         .skill-wrapper {
-          @apply flex flex-row gap-1.5 sm:gap-2 items-center bg-white px-3 sm:px-4 py-1 rounded-full border border-slate-200;
+          @apply flex flex-row gap-1.5 sm:gap-2 items-center bg-white px-3 sm:px-4 py-1 rounded-full border border-slate-200 hover:scale-105 transition duration-300 ease-in-out;
         }
         .skill-wrapper-img {
           @apply w-5 h-5 sm:w-6 sm:h-6 object-contain;
@@ -55,7 +55,7 @@
           @apply px-3 sm:px-4 py-1 flex justify-center items-center bg-slate-100 rounded-full text-xs sm:text-sm;
         }
         .card {
-          @apply flex flex-col gap-3 sm:gap-4 justify-start items-start p-3 sm:p-4 border border-slate-300 rounded-lg hover:shadow-md transition-shadow duration-300;
+          @apply flex flex-col gap-3 sm:gap-4 justify-start items-start p-3 sm:p-4 border border-slate-300 rounded-lg  hover:scale-105 transition duration-300 ease-in-out;
         }
         .skill-list {
           @apply flex flex-col gap-4;
@@ -65,18 +65,20 @@
   </head>
   <body class="w-full min-h-screen flex flex-col overflow-x-hidden">
     <header
-      class="w-full max-w-4xl flex flex-row justify-between items-center gap-2 sm:gap-4 border border-slate-300 mx-auto my-2 sm:my-4 px-4 sm:px-6 py-2 sm:py-3 rounded-full"
+      class="w-[calc(100%-2rem)] max-w-4xl flex flex-row justify-between items-center gap-2 sm:gap-4 border border-slate-300 mx-auto my-2 sm:my-4 px-1 sm:px-2 py-1 sm:py-2 rounded-full"
     >
-      <h1 class="text-sm sm:text-base font-semibold text-slate-800">
-        Apif Supriadi
+      <h1
+        class="text-base sm:text-xl font-semibold text-slate-800 ml-2 sm:ml-4 italic"
+      >
+        @apifsprd
       </h1>
       <a
         href="mailto:apifsupriadi27@gmail.com"
         target="_blank"
         class="social-link"
       >
-        <i data-lucide="mail" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-        <p class="text-xs sm:text-sm text-slate-800">Kirim Email</p>
+        <i data-lucide="mail" class="w-4 h-4 sm:w-4 sm:h-4"></i>
+        <p class="text-sm sm:text-sm text-slate-800">Kirim Email</p>
       </a>
     </header>
 
@@ -108,15 +110,15 @@
               href="https://www.linkedin.com/in/apifsprd/"
               target="_blank"
               class="social-link"
-              ><i data-lucide="linkedin" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-              <p class="text-xs sm:text-sm text-slate-800">LinkedIn</p></a
+              ><i data-lucide="linkedin" class="w-4 h-4 sm:w-4 sm:h-4"></i>
+              <p class="text-sm sm:text-sm text-slate-800">LinkedIn</p></a
             >
             <a
               href="https://apifsprd.web.id"
               target="_blank"
               class="social-link"
-              ><i data-lucide="pen" class="w-3 h-3 sm:w-4 sm:h-4"></i>
-              <p class="text-xs sm:text-sm text-slate-800">Blog</p></a
+              ><i data-lucide="pen" class="w-4 h-4 sm:w-4 sm:h-4"></i>
+              <p class="text-sm sm:text-sm text-slate-800">Blog</p></a
             >
           </div>
         </main>
@@ -124,17 +126,17 @@
 
       <section
         data-style="kemampuan"
-        class="w-full bg-slate-100 py-4 sm:py-6 px-4 sm:px-6 flex flex-col gap-4 sm:gap-5 rounded-2xl -mx-4 sm:-mx-6 lg:mx-0 lg:px-6"
+        class="w-full bg-slate-100 py-4 mx-auto sm:py-6 px-4 sm:px-6 flex flex-col gap-4 sm:gap-5 rounded-2xl -mx-4 sm:-mx-6 lg:mx-0 lg:px-6"
       >
         <div>
           <h2 class="h2">Kemampuan Teknis</h2>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-start gap-y-8"
         >
           <div class="skill-list">
             <h6 class="h6">Bahasa Pemrograman</h6>
-            <div class="flex flex-row flex-wrap gap-2 sm:gap-3">
+            <div class="flex flex-row flex-wrap gap-2">
               <div class="skill-wrapper">
                 <img
                   src="images/logos/js.png"
@@ -155,7 +157,7 @@
           </div>
           <div class="skill-list">
             <h6 class="h6">Framework</h6>
-            <div class="flex flex-row flex-wrap gap-2 sm:gap-3">
+            <div class="flex flex-row flex-wrap gap-2">
               <div class="skill-wrapper">
                 <img
                   src="images/logos/react.png"
@@ -200,7 +202,7 @@
           </div>
           <div class="skill-list">
             <h6 class="h6">Peralatan</h6>
-            <div class="flex flex-row flex-wrap gap-2 sm:gap-3">
+            <div class="flex flex-row flex-wrap gap-2">
               <div class="skill-wrapper">
                 <img
                   src="images/logos/git.png"
@@ -359,11 +361,11 @@
       </section>
     </div>
 
-    <footer class="w-full mt-auto">
+    <footer class="w-full mt-32">
       <div class="w-full bg-slate-200 py-6 sm:py-8 px-4 sm:px-6">
-        <div class="max-w-4xl mx-auto">
-          <h5 class="h5">Siap Berkolaborasi</h5>
-          <p class="p mt-3 sm:mt-4 max-w-2xl">
+        <div class="max-w-4xl mx-auto flex flex-col gap-3 sm:gap-4">
+          <h5 class="h5">Saya siap berkolaborasi</h5>
+          <p class="p mt-3 sm:mt-4 max-w-2xl leading-relaxed">
             Saya antusias untuk berkolaborasi dan menciptakan hal hebat bersama.
             Jangan ragu untuk menghubungi saya untuk diskusi atau peluang kerja
             sama!
@@ -380,7 +382,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full bg-slate-500 py-2 sm:py-3 px-4 sm:px-6">
+      <div class="w-full bg-slate-800 py-2 sm:py-3 px-4 sm:px-6">
         <div class="max-w-4xl mx-auto">
           <p class="text-xs text-slate-100">Copyright &copy; Apif Supriadi</p>
         </div>
