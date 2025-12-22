@@ -46,7 +46,7 @@
           @apply flex flex-row gap-1 sm:gap-2 items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-slate-100 rounded-full hover:bg-slate-200 transition duration-400 ease-in-out text-xs sm:text-sm;
         }
         .skill-wrapper {
-          @apply flex flex-row gap-1.5 sm:gap-2 items-center bg-white px-3 sm:px-4 py-1 rounded-full border border-slate-200 hover:scale-105 transition duration-300 ease-in-out;
+          @apply flex flex-row gap-1.5 sm:gap-2 items-center bg-white px-3 sm:px-4 py-1 rounded-full border border-slate-200 hover:scale-105 transition duration-300 ease-in-out cursor-pointer;
         }
         .skill-wrapper-img {
           @apply w-5 h-5 sm:w-6 sm:h-6 object-contain;
@@ -67,11 +67,13 @@
     <header
       class="w-[calc(100%-2rem)] max-w-4xl flex flex-row justify-between items-center gap-2 sm:gap-4 border border-slate-300 mx-auto my-2 sm:my-4 px-1 sm:px-2 py-1 sm:py-2 rounded-full"
     >
-      <h1
-        class="text-base sm:text-xl font-semibold text-slate-800 ml-2 sm:ml-4 italic"
-      >
-        @apifsprd
-      </h1>
+      <a href="#">
+        <h1
+          class="text-base sm:text-xl font-semibold text-slate-800 ml-2 sm:ml-4 italic cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
+        >
+          @apifsprd
+        </h1>
+      </a>
       <a
         href="mailto:apifsupriadi27@gmail.com"
         target="_blank"
@@ -113,10 +115,7 @@
               ><i data-lucide="linkedin" class="w-4 h-4 sm:w-4 sm:h-4"></i>
               <p class="text-sm sm:text-sm text-slate-800">LinkedIn</p></a
             >
-            <a
-              href="https://apifsprd.web.id"
-              target="_blank"
-              class="social-link"
+            <a href="https://apifsprd.web.id" class="social-link"
               ><i data-lucide="pen" class="w-4 h-4 sm:w-4 sm:h-4"></i>
               <p class="text-sm sm:text-sm text-slate-800">Blog</p></a
             >
@@ -197,6 +196,14 @@
                   class="skill-wrapper-img"
                 />
                 <p class="p">Expo</p>
+              </div>
+              <div class="skill-wrapper">
+                <img
+                  src="images/logos/nextjs.png"
+                  alt="expo-logo"
+                  class="skill-wrapper-img"
+                />
+                <p class="p">NextJS</p>
               </div>
             </div>
           </div>
@@ -364,7 +371,7 @@
     <footer class="w-full mt-32">
       <div class="w-full bg-slate-200 py-6 sm:py-8 px-4 sm:px-6">
         <div class="max-w-4xl mx-auto flex flex-col gap-3 sm:gap-4">
-          <h5 class="h5">Saya siap berkolaborasi</h5>
+          <h5 class="h5">Siap berkolaborasi</h5>
           <p class="p mt-3 sm:mt-4 max-w-2xl leading-relaxed">
             Saya antusias untuk berkolaborasi dan menciptakan hal hebat bersama.
             Jangan ragu untuk menghubungi saya untuk diskusi atau peluang kerja
